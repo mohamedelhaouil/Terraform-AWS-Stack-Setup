@@ -16,7 +16,7 @@ variable "Zones" {
 }
 
 variable "MY_IP" {
-  default = "1.1.1.1/32"
+  default = "0.0.0.0/0"
 }
 
 variable "VpcNAME" {
@@ -39,4 +39,22 @@ variable "PrivSubnetCIDR" {
 
 variable "USERNAME" {
   default = "ubuntu"
+}
+
+variable "rmquser" {
+  default = "rabbit"
+}
+
+variable "rmqpass" {
+}
+
+variable "dbuser" {
+  default = "admin"
+}
+
+variable "dbpass" {
+}
+
+variable "dbname" {
+  default = "accounts"
 }
