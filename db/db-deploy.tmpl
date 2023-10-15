@@ -1,4 +1,4 @@
 sudo apt update
 sudo apt install git mysql-client -y
-git clone https://github.com/mohamedelhaouil/Java-Web-Project.git
+git clone https://github.com/mohamedelhaouil/Java-Test-App.git
 mysql -h ${rds-endpoint} -u ${dbuser} --password=${dbpass} accounts --ssl-mode=DISABLED < /home/ubuntu/Java-Test-App/src/main/resources/db_backup.sql
