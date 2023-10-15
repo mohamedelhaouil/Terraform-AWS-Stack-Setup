@@ -72,6 +72,13 @@ resource "aws_security_group" "AWS_Stack_backend_sg" {
     to_port     = 0
     cidr_blocks = [aws_security_group.AWS_Stack_ec2instance_sg.id]
   }
+
+  ingress {
+    from_port   = 3306
+    protocol    = "tcp"
+    to_port     = 3306
+    cidr_blocks = [aws_security_group.AWS_Stack_bastionhost_sg.id]
+  }
 }
 
 resource "aws_security_group_rule" "allow_backend_sg_itself" {
