@@ -70,7 +70,7 @@ resource "aws_security_group" "AWS_Stack_backend_sg" {
     from_port   = 0
     protocol    = "-1"
     to_port     = 0
-    cidr_blocks = [aws_security_group.AWS_Stack_ec2instance_sg]
+    cidr_blocks = [aws_security_group.AWS_Stack_ec2instance_sg.id]
   }
 }
 
