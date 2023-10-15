@@ -46,6 +46,7 @@ variable "rmquser" {
 }
 
 variable "rmqpass" {
+  sensitive = true
 }
 
 variable "dbuser" {
@@ -53,6 +54,7 @@ variable "dbuser" {
 }
 
 variable "dbpass" {
+  sensitive = true
 }
 
 variable "dbname" {
